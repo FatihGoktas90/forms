@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Form Elements Example</title>
+    <style>
+      body {
+        background-color: #eaf3fb;
+      }
+      h3 {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 45px;
+      }
+      h4 {
+      }
+      table {
+        margin-left: 175px;
+        margin-top: 170px;
+        background-color: #eaf3fb;
+        font-family: Nunito;
+      }
+      #frame {
+        padding-top: 40px;
+      }
+      #text {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #td2 {
+        padding: 40px;
+      }
+      #email {
+        width: 98%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+      }
+      #First {
+        width: 48%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+      }
+      #Last {
+        width: 48%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+      }
+      #sehir {
+        width: 99%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+      }
+      #submit {
+        background-color: #eaf3fb;
+        border: 1px solid;
+        border-radius: 5px;
+        width: 80%;
+      }
+      #date {
+        width: 50%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+      }
+      #footernote {
+        color: gray;
+      }
+      .p1 {
+        font-family: Nunito;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div id="text">
+            <h3><center>Join Info Session</center></h3>
+            <p class="p1">
+              <center>
+                Are you interested? Attend one of our free information sessions
+                to meet our team, learn about
+              </center>
+            </p>
+            <p class="p1">
+              <center>
+                our programs, and see if Clarusway is a good fit for your career
+                aspirations!
+              </center>
+            </p>
+          </div>
+          <center>
+            <iframe
+              id="frame"
+              width="424"
+              height="238"
+              src="https://www.youtube.com/embed/bFOVoe43tTs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </center>
+        </td>
+        <td rowspan="2" id="td2">
+          <form action="#">
+            <h4 style="color: #3a5168">
+              Email <span style="color: red"> *</span>
+            </h4>
+
+            <label for="email"></label>
+            <input type="email" name="email" id="email" required /> <br />
+            <h4 style="color: #3a5168">
+              Name <span style="color: red"> *</span>
+            </h4>
+            <label for="First"></label>
+            <input type="text" name="isim" id="First" />
+            <label for="Last"></label>
+            <input type="text" name="soyisim" id="Last" /><br />
+            <h4 style="color: #3a5168">
+              Country <span style="color: red"> *</span>
+            </h4>
+            <label for="sehir"></label>
+            <select name="country" id="sehir">
+              <option value="Turkey">Turkey</option>
+              <option value="US">US</option></select
+            ><br />
+            <h4 style="color: #3a5168">
+              Which program are you interested in
+              <span style="color: red"> *</span>
+            </h4>
+            <input type="radio" name="first" id="first" />
+            <label for="first">IT Training Programs for BEGINNERS</label><br />
+
+            <input type="radio" name="second" id="second" />
+            <label for="second">IT Training Programs for PROS</label><br />
+
+            <input type="radio" name="third" id="third" />
+            <label for="third">Cyber Security</label><br />
+
+            <input type="radio" name="forth" id="forth" />
+            <label for="forth">Salesforce</label><br />
+
+            <p>
+              <small
+                >* BEGINNERS: AWS & DevOps | Full Stack Developer | Data Science
+              </small>
+            </p>
+            <h4 style="color: #3a5168">
+              Info Session Date <span style="color: red"> *</span>
+            </h4>
+            <select name="date" id="date" value="">
+              <option value="1">2020-01-01</option>
+              <option value="2">2020-01-01</option>
+              <option value="3">2020-01-01</option>
+              <option value="4">2020-01-01</option></select
+            ><br />
+
+            <p id="footernote">
+              By providing us with your email, you agree to the terms of our
+              <a href="#">Privacy Policy.</a>
+            </p>
+
+            <center>
+              <input type="submit" name="submit" value="Submit" id="submit" />
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
